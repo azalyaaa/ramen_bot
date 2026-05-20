@@ -22,7 +22,8 @@ from telebot import types
 
 from recipe_bot.models import UserQuery, UserRecipe
 
-load_dotenv()
+from pathlib import Path
+load_dotenv(dotenv_path=Path(__file__).parent.parent / '.env')
 
 TOKEN = os.getenv('BOT_TOKEN', '8739715609:AAF4djHaHUgBlyMbU_W00yPznl-xtP6-TkU')
 bot = telebot.TeleBot(TOKEN)
@@ -758,7 +759,7 @@ BAKING_RECIPES = [
     {
         "name": "Mug Cake (10 sec microwave)",
         "ingredients": ["flour", "egg", "sugar", "butter", "cocoa"],
-        "time": "0.5 min",
+        "time": "0.1 min",
         "nutrition": "🔢 *Nutrition per 100g:* cal — 320 | P — 7g | F — 14g | C — 42g",
         "shopping_list": "🌾 Flour — 4 tbsp\n🥚 Egg — 1 pc\n🍬 Sugar — 3 tbsp\n🧈 Butter — 2 tbsp\n🍫 Cocoa powder — 2 tbsp\n🥛 Milk — 3 tbsp\n🧂 Baking powder — ¼ tsp",
         "full_recipe": (
