@@ -211,7 +211,7 @@ ramen_bot/
 
 | Start | Recipe search | Recipe card |
 |---|---|---|
-| ![start](screenshots/start.png) | ![search](screenshots/search.png) | ![card](screenshots/card.png) |
+| ![start](screenshots/start.jpg) | ![search](screenshots/search.jpg) | ![card](screenshots/card.jpg) |
 
 ---
 
